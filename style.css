@@ -1,0 +1,259 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    background-color: #000;
+    color: #fff;
+    overflow: hidden;
+}
+.main{
+    display: flex;
+    height:100vh;
+    padding: 0.5rem;
+}
+.sidebar{
+    background-color: #000;
+    width:340px;
+    border-radius: 1rem; /*1 rem is 16px */
+    margin: 0.5rem;
+}
+.main-content{
+    background-color: #121212;
+    /* give rest area using flex 1 */
+    flex: 1;
+    border-radius: 1rem;
+    overflow: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.music-player{
+    background-color: black;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height:72px;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+.nav-bar{
+    background-color: #121212;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    /* flex direction is changed to column so justify content will align it vertically else horizontally */
+    justify-content: center;
+    height: 100px;
+    /* 1rem=16px */
+    padding: 0.5rem 0.75rem;
+}
+.nav-opt{
+    line-height: 40px;
+    opacity: 0.7;
+    padding: 0.5rem 0.75rem;
+}
+.nav-opt:hover{
+    opacity: 1;
+}
+.nav-opt i{
+    font-size: 1.25rem;
+    margin-right: 0.5rem;
+}
+.nav-opt a{
+    font-size: 1rem;
+}
+.library{
+    background-color: #121212;
+    border-radius: 1rem;
+    height: 100%;
+    margin-top: 0.5rem;
+    padding: 0.5rem 0.75rem;
+}
+.options{
+    display: flex;
+    justify-content: space-between;
+}
+/* margin is between two div */
+.lib-opt img{
+    height: 1.25rem;
+    width: 1.25rem;
+}
+.icons{
+    font-size: 1rem;
+    
+}
+.icons i{
+    margin: 0.5rem;
+}
+.box{
+    background-color: #232323;
+    height: 9rem;
+    border-radius: 0.75rem;
+    padding: 1rem 1.25rem;
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+}
+.box-p1{
+    font-size: 1rem;
+    font-weight: 500;
+}
+.box-p2{
+    font-size: 0.75rem;
+    opacity: 0.7rem;
+}
+.badge{
+    
+    border-radius: 100px;
+    padding: 0.25rem 1rem;
+    font-weight: 700;
+    margin-top: 0.5rem;
+    height: 2rem;
+    width: fit-content;
+   
+}
+.sticky-nav{
+    position: sticky;
+    top: 0;
+    background-color: #121212;
+    display: flex;
+    
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0.5rem;
+    /* margin-right: 1rem; */
+    z-index: 10;
+    /* width: 100%; */
+
+}
+.sticky-nav-opt button{
+    margin-right: 0.5rem;
+
+}
+.sticky-nav-opt i{
+    margin-right: 0.75rem;
+}
+.dark-badge{
+    background-color: #000;
+    color: #fff;
+    border: none;
+    font-weight: 500;
+}
+@media (max-width:1000px){
+  .hide{
+    display: none;
+  }
+}
+.single-card{
+    background-color: #232323;
+    width: 150px;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+}
+
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.card-img{
+    width: 100%;
+    border-radius: 0.5rem;
+}
+.card-title
+{
+    padding-top: 0.5rem;
+    font-weight: 700;
+}
+.card-info{
+    opacity: 0.75;
+    font-size: 0.75rem;
+}
+.footer{
+    height: 19rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.line{
+    border-top: 1px solid white;
+    opacity: 0.4;
+    width: 90%;
+    height: 50%;
+    
+}
+.music-player{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.album{
+    margin-top: 0.5rem;
+    width: 25%;
+    display: flex;
+     justify-content: center; 
+    align-items: center;
+    padding-top: 1rem;
+    flex-wrap: wrap;
+    
+}
+.album img{
+    border-radius: 0.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1.5rem;
+    width: 50px
+    
+   
+}
+
+
+
+.text-in-player p{
+    margin:0;
+    margin-top: -12px;
+    margin-bottom: 7px;
+    margin-right: 5px;
+}
+
+.song-name{
+    
+    font-weight: 700;
+    
+}
+
+.song-writer{
+    opacity: 0.5;
+    font-size: 0.75rem;
+
+    
+}
+ .album{
+    width: 25%;
+}
+.player{
+    width: 50%;
+}
+
+.controls{
+    width: 25%;
+} 
+
+
+.player-control{
+    margin: 0;
+    background-color: #000;
+}
+.player-images{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.player-images img{
+    margin: 1rem;
+}
+.player-icon{
+    height: 1rem;
+}
